@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name logos)(type KiCad)(uri C:/work/PCB/KiCadLibrary/logos.pretty)(options "")(descr "")(disabled))
+  (lib (name XIAO)(type KiCad)(uri "C:/work/mypcb/KiCadLibrary/Seeeduino XIAO KICAD")(options "")(descr ""))
+)

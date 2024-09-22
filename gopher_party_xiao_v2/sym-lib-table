@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SeedXIAO)(type Legacy)(uri "C:/work/mypcb/KiCadLibrary/Seeeduino XIAO KICAD/Seeeduino XIAO.lib")(options "")(descr ""))
+  (lib (name SSD1306)(type Legacy)(uri "C:/work/mypcb/KiCadLibrary/Seeeduino XIAO KICAD/SSD1306-128x64_OLED.lib")(options "")(descr ""))
+)
