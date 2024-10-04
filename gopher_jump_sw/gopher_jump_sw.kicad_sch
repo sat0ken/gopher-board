@@ -126,6 +126,130 @@
 				)
 			)
 		)
+		(symbol "Device:Speaker"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LS"
+				(at 1.27 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Speaker"
+				(at 1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.254 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Speaker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "speaker sound"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Speaker_0_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.27) (xy 3.556 3.81) (xy 3.556 -6.35) (xy 1.016 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Speaker_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "LED:WS2812B"
 			(pin_names
 				(offset 0.254)
@@ -1506,10 +1630,6 @@
 		(uuid "4a472f9d-23db-4b91-a4be-de657a1f61c3")
 	)
 	(no_connect
-		(at 121.92 57.15)
-		(uuid "55bfbc23-16a9-4444-b42a-3275118ba781")
-	)
-	(no_connect
 		(at 138.43 29.21)
 		(uuid "57486295-78a8-4233-9a4f-2ecaa9746322")
 	)
@@ -1554,6 +1674,16 @@
 			(type default)
 		)
 		(uuid "0663bf98-c25c-409a-b9c6-75871c4cc71e")
+	)
+	(wire
+		(pts
+			(xy 121.92 57.15) (xy 82.55 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "092aeee3-4f69-4407-9f8a-c4fcb919f75a")
 	)
 	(wire
 		(pts
@@ -1767,6 +1897,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 57.15) (xy 82.55 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ad505b-5be3-4d4d-aec3-1be6ea571688")
+	)
+	(wire
+		(pts
 			(xy 88.9 73.66) (xy 97.79 73.66)
 		)
 		(stroke
@@ -1844,6 +1984,16 @@
 			(type default)
 		)
 		(uuid "9d1ca080-03e7-47b1-8f24-f504fa3a8bfe")
+	)
+	(wire
+		(pts
+			(xy 73.66 72.39) (xy 77.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4730299-c566-4c48-bc7f-8efccea1a83f")
 	)
 	(wire
 		(pts
@@ -2044,6 +2194,26 @@
 			(type default)
 		)
 		(uuid "d9e19cb2-6a6a-4f33-a8de-ae23baa5c939")
+	)
+	(wire
+		(pts
+			(xy 77.47 72.39) (xy 77.47 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e239f231-8d96-4b15-ab04-7f732d855666")
+	)
+	(wire
+		(pts
+			(xy 82.55 69.85) (xy 73.66 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e65c0e4b-42c4-4892-b1ef-674554073e98")
 	)
 	(wire
 		(pts
@@ -3688,6 +3858,141 @@
 			(project ""
 				(path "/fbee910f-9533-4f06-9691-c7d60ac48f2d"
 					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "gopher_pilot_xiao_sw-rescue:GND-power")
+		(at 77.47 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a758e93-3c18-44c4-a043-2590d5651d15")
+		(property "Reference" "#PWR06"
+			(at 77.47 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.597 78.0542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e09ccf99-9a30-4ccd-ba8d-641b41e4e50b")
+		)
+		(instances
+			(project "gopher_jump_sw"
+				(path "/fbee910f-9533-4f06-9691-c7d60ac48f2d"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker")
+		(at 68.58 69.85 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6fb23d30-a470-46ef-b37f-999ac1cbb4d7")
+		(property "Reference" "LS1"
+			(at 63.5 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Speaker"
+			(at 63.5 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm"
+			(at 68.58 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.834 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Speaker"
+			(at 68.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c001c949-f293-49c0-b538-0b2758c7d026")
+		)
+		(pin "1"
+			(uuid "8a88a55d-150d-4312-9ea0-1a6ff54820e8")
+		)
+		(instances
+			(project ""
+				(path "/fbee910f-9533-4f06-9691-c7d60ac48f2d"
+					(reference "LS1")
 					(unit 1)
 				)
 			)
