@@ -2,9 +2,9 @@
 
 Kicad Project for fun tinygo!
 
-![](./IMG_3623.jpg)
+![](./img/IMG_3623.jpg)
 
-![](./IMG_3627.jpg)
+![](./img/IMG_3627.jpg)
 
 ## Licence
 
