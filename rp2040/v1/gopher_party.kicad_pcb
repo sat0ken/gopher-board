@@ -10236,7 +10236,7 @@
 	)
 	(gr_text "JLCJLCJLCJLC"
 		(at 114.408085 63.325306 0)
-		(layer "B.Cu")
+		(layer "B.SilkS")
 		(uuid "4c987a1b-d9a4-479f-a816-a86df9d1f9b6")
 		(effects
 			(font
