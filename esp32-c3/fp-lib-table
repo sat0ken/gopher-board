@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "mylib")(type "KiCad")(uri "/home/satoken/work/mypcb/vsrKiCad/footprint/vsrAkizuki.pretty")(options "")(descr ""))
+)
